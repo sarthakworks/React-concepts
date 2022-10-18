@@ -1,11 +1,12 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-
-export default function ChildContext({ val, changeText }) {
+import React from "react";
+import { useContext } from "react";
+import SimpleContext from "../context/simpleContext/SimpleContext";
+export default function ChildContext() {
+  const { Text, ChangeText } = useContext(SimpleContext);
   return (
     <>
-      <p>{val}</p> {/* coming from parent */}
-      <input onChange={changeText} />
+      <p>{Text}</p> {/* coming from parent */}
+      <input onChange={ChangeText} />
       {/* going to parent using callback function*/}
     </>
   );

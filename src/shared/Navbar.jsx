@@ -32,6 +32,21 @@ function Navbar() {
                   childContext
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/Reducer">
+                  childContext
+                </Link>
+              </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link active" to="/counter">
+                  Counter
+                </Link>
+              </li> */}
+              <li className="nav-item">
+                <Link className="nav-link active" to="/random">
+                  Random
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
